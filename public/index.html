@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="nord">
+
 <head>
   <meta charset=utf-8>
   <title>Yodlr Design Challenge</title>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script>d -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-  <h1>Yodlr Design Challenge</h1>
-  <p>
-    <a href="/signup.html">Registration Page</a><br/>
-    <a href="/admin.html">Admin Page</a>
-  </p>
+
+<body class="bg-[url('../img/light-background.jpg')] bg-cover h-screen bg-center">
+  <div class="navbar bg-slate-700/50">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">daisyUI</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Link</a></li>
+        <li>
+          <details>
+            <summary>
+              Parent
+            </summary>
+            <ul class="p-2 bg-base-100 rounded-t-none">
+              <li><a>Link 1</a></li>
+              <li><a>Link 2</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="h-screen w-screen  bg-slate-800/5 flex  md:justify-end justify-center">
+    <div class=" my-auto place-self-end md:mr-[20vw]">
+      <h1 class="text-3xl font-semibold">Yodlr</h1>
+      <h1 class="text-3xl ">
+        Hello world!
+      </h1>
+      <p class="">
+        <a href="/signup.html">Registration Page</a><br />
+      <div class="collapse bg-base-200">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-medium">
+          Click me to show/hide content
+        </div>
+        <div class="collapse-content">
+          <h1>Yodlr Registration Portal</h1>
+          <form>
+            Email: <input type="email" name="email"></br>
+            <button type="submit">Submit</button>
+          </form>
+          <p>
+            <a href="/admin.html">Admin Page</a>
+          </p>
+        </div>
+      </div>
+      <a class="" href="/admin.html">Admin Page</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
