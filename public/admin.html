@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="nord">
+
 <head>
   <meta charset=utf-8>
   <title>Yodlr Admin Page</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-  List user data here
+
+<body class="bg-[url('../img/light-background.jpg')] bg-cover  bg-center min-h-screen h-fit bg-fixed">
+
+
+  <div class="navbar bg-slate-700/40">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">Yodlr</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1 capitalize">
+        <li><a href="/index.html">registration page</a></li>
+        <li>
+          <a href="https://github.com/rithmschool/yodlr-take-home">code</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <h1 class="text-center text-2xl py-4 font-semibold">User information</h1>
+  <div id="collapse-list" class="lg:w-1/2 m-auto w-4/5 pb-4">
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="./js/admin.js"></script>
 </body>
+
 </html>
